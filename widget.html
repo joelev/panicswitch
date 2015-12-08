@@ -10,7 +10,7 @@
 
       $(document).ready(function() {
         $.getJSON("http://www.meethue.com/api/nupnp", function(d) {
-          bridge_ip = d[0]['internalipaddress'];
+          bridge_ip = "192.168.1.32"
           bridge_url = "http://" + bridge_ip + "/api/panicswitch"
 
           $.getJSON(bridge_url + "/lights", function(d) {
