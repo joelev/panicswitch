@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>DOT Brooklyn Webcam</title>
+<script language="JavaScript" type="text/javascript">
+var t6 = 4 // interval in seconds
+imgsrc6 = 
+""; function ErrorImg6()
+{ setTimeout("LoadImg6()",
+t6*1000) ;
+} function LoadImg6(){
+if (imgsrc6 == "") imgsrc6 = document.images.vision6.src;
+document.images.vision6.onload = "";  
+tmp = new Date();
+tmp = "?"+tmp.getTime();
+document.images.vision6.src = 
+imgsrc6+tmp; setTimeout("LoadImg6()",
+t6*1000)
+;
+}
+</script> 
+</head>
+<body>
+<div width="100%">
+<a href="http://nyctmc.org/multiview2.php?listcam=175" target="_top"><img src="http://207.251.86.238/cctv14.jpg" width="99%"       
+      name="vision6" 
+      onload="LoadImg6()" 
+      onerror="ErrorImg6()" title="Brooklyn Bridge" BORDER=0></a></center>
+</div>
+</body>
+</html>
